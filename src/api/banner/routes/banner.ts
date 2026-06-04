@@ -2,6 +2,6 @@
  * banner router
  */
 
-import { factories } from '@strapi/strapi';
+const { createCoreRouter } = require('@strapi/strapi').factories;
 
-export default factories.createCoreRouter('api::banner.banner');
+module.exports = createCoreRouter('api::banner.banner');

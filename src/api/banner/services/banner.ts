@@ -2,6 +2,6 @@
  * banner service
  */
 
-import { factories } from '@strapi/strapi';
+const { createCoreService } = require('@strapi/strapi').factories;
 
-export default factories.createCoreService('api::banner.banner');
+module.exports = createCoreService('api::banner.banner');

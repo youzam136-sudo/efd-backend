@@ -2,6 +2,6 @@
  * banner controller
  */
 
-import { factories } from '@strapi/strapi';
+const { createCoreController } = require('@strapi/strapi').factories;
 
-export default factories.createCoreController('api::banner.banner');
+module.exports = createCoreController('api::banner.banner');
