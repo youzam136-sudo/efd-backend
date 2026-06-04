@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "blogs",
+  "info": {
+    "singularName": "blog",
+    "pluralName": "blogs",
+    "displayName": "Blog"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "Slug": {
+      "type": "uid",
+      "targetField": "Title",
+      "required": true
+    },
+    "Feature_Image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Excerpt": {
+      "type": "text"
+    },
+    "Author": {
+      "type": "string"
+    },
+    "Date": {
+      "type": "date",
+      "required": true
+    },
+    "Content": {
+      "type": "customField",
+      "customField": "plugin::cms-editor.blocknote"
+    }
+  }
+}

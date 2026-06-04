@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "patents",
+  "info": {
+    "singularName": "patent",
+    "pluralName": "patents",
+    "displayName": "Patent"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "Image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}

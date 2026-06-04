@@ -1,0 +1,14 @@
+{
+  "name": "cms-editor",
+  "version": "1.0.0",
+  "strapi": {
+    "name": "cms-editor",
+    "displayName": "CMS BlockNote Editor",
+    "description": "Notion-style BlockNote rich text editor",
+    "kind": "plugin"
+  },
+  "exports": {
+    "./strapi-admin": "./admin/src/index.tsx",
+    "./strapi-server": "./server/src/index.js"
+  }
+}
